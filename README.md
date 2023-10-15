@@ -1,18 +1,11 @@
-*[Leia a documentação em Português](https://github.com/braziljs/conf-boilerplate/blob/master/README-pt.md)*
-
----
-
-# Conf Boilerplate [![Build Status](https://secure.travis-ci.org/braziljs/conf-boilerplate.png?branch=master)](https://travis-ci.org/braziljs/conf-boilerplate)
+# TechXchange Conference Website [![Build Status](https://secure.travis-ci.org/braziljs/conf-boilerplate.png?branch=master)](https://travis-ci.org/braziljs/conf-boilerplate)
 
 ![image](http://f.cl.ly/items/2i1m3z3i1a3Z0I1X472B/logo.jpg)
 
-An initiative of [BrazilJS Foundation](http://braziljs.org) to help those people who want to organize conferences/events and don't have too much time to create the website of it.
-
-> **Maintainer:** [Jean Carlo Emer](https://github.com/jcemer)
+A project template initiative to help those people who want to organize conferences/events and don't have too much time to create the website of it.
 
 ## Table of contents
 
-* [See live demo](http://braziljs.github.io/conf-boilerplate/)
 * [How it works?](#how-it-works)
 * [Getting Started](#getting-started)
 * [Structure](#structure)
@@ -27,7 +20,7 @@ An initiative of [BrazilJS Foundation](http://braziljs.org) to help those people
 
 [![image](http://f.cl.ly/items/1q3i0r3q0n3y1N070M47/Screen%20Shot%202012-11-16%20at%207.05.44%20PM.png)](http://www.youtube.com/watch?v=EI99oZI3nKY)
 
-We use [DocPad](https://github.com/bevry/docpad), a static generator in NodeJS, to create an easily customizable template. More than that, hosting is free via [GitHub Pages](http://pages.github.com) and you can use your own domain *(more information about that on [Deploy](#custom-domain))*.
+I use [DocPad](https://github.com/bevry/docpad), a static generator in NodeJS, to create an easily customizable template. More than that, hosting is free via [GitHub Pages](http://pages.github.com) and you can use your own domain *(more information about that on [Deploy](#custom-domain))*.
 
 By default, we have the following sections:
 
@@ -207,7 +200,7 @@ schedule: [
 ]
 ```
 
-Do you want to list an attribute of the speaker that is not there? Okay just add it on `docpad.js` and then show it with `<%= speaker.yourNewAttribute %>` on [speakers.html.eco](https://github.com/braziljs/conf-boilerplate/blob/master/src/partials/section/speakers.html.eco).
+Do you want to list an attribute of the speaker that is not there? Okay just add it on `docpad.js` and then show it with `<%= speaker.yourNewAttribute %>` on [speakers.html.eco](https://github.com/manuelinfosec/techxchange-conference/blob/master/src/partials/section/speakers.html.eco).
 
 ### List of another items on Agenda
 
@@ -228,9 +221,9 @@ To add any sponsor or partner, just use `sponsors` and `partners` variables.
 
 ```
 partners: [
-  name: "BrazilJS"
+  name: "Manuel"
   logo: "http://f.cl.ly/items/2N3i2W0X2f3c2g2Z2N0f/Untitled-1.png"
-  url: "http://braziljs.org"
+  url: "http://manuelinfosec.me"
 ]
 ```
 
@@ -288,12 +281,7 @@ See the conferences that already used this project as a kickstart:
 * [Dia do Codigo](http://diadocodigo.org/)
 * [Mulheres Tech Day](http://www.mulherestechday.com.br/)
 
-Have you created a website using ConfBoilerplate? Let's us know =D
-
-## Forks
-
-* [Ruby version of ConfBoilerplate made with Jekyll by Mauro George](https://github.com/maurogeorge/conf_boilerplate_ruby)
-* [Hugo version of ConfBoilerplate by Jonhnny Weslley](https://github.com/jweslley/hugo-conference)
+Have you created a website using this project? Let's us know =D
 
 ## Contributing
 
@@ -301,18 +289,3 @@ If you want to submit a pull request, please do it in `dev` branch.
 
 * `master` contains the stable version of it.
 * `dev` contains features that are being developed.
-
-## Who is behind it?
-
-We're a group of developers who have been through hard times organizing conferences around Brazil and now just want to help another people to do this hard task.
-
-**Created by**:
-
-* [Zeno Rocha](http://github.com/zenorocha)
-* [Bernard De Luna](http://github.com/bernarddeluna)
-
-Special thanks to all community members for feedbacks and contributions.
-
-## License
-
-[MIT License](http://braziljs.mit-license.org/) © BrazilJS Foundation
